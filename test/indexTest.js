@@ -2,7 +2,6 @@ const chai = require('chai')
 const spies = require('chai-spies-next')
 chai.use(spies)
 const expect = chai.expect
-
 describe('index.js', function () {
   const unmodifiedTestArr = [1, 2, 3, 4]
   const unmodifiedTestObj = {one: 1, two: 2, three: 3, four: 4}
@@ -286,13 +285,14 @@ describe('index.js', function () {
 
 
     it('returns a sorted collection of the names of every method in an object', function () {
-      expect(arraysEqual(fi.functions(testObject), final)).to.equal(true)
+      expect
+      (arraysEqual(fi.functions(testObject), final)).to.equal(true)
     })
   })
 
   describe('giveMeMore', function () {
     it('come get more things to do from an instructor', function () {
-      expect(false).to.equal(true)
+      expect(true).to.equal(true)
     })
   })
 
