@@ -177,7 +177,7 @@ describe('index.js', function () {
   describe('sortBy', function () {
     const unsortedIntArr = [3, 8, 5, 1, 9, 11, 8]
     const unsortedStringArr = ["maru", "choux", "doge", "coconut"]
-    const unsortedObjArr = [
+     const unsortedObjArr = [
       {name: "dennis", age: 29},
       {name: "dee", age: 40},
       {name: "mac", age: 34},
@@ -190,7 +190,7 @@ describe('index.js', function () {
       {name: "mac", age: 34},
       {name: "dee", age: 40},
       {name: "frank", age: 72}
-    ]
+    ] 
 
     function sortArrFunction(val) { return val }
     function sortIntsBySin(val)   { return Math.sin(val) }
@@ -203,14 +203,14 @@ describe('index.js', function () {
 
     it('does not modify the original arrays', function () {
       fi.sortBy(unsortedIntArr, sortArrFunction)
-      fi.sortBy(unsortedStringArr, sortArrFunction)
+       fi.sortBy(unsortedStringArr, sortArrFunction) 
       expect(arraysEqual(unsortedIntArr, [3, 8, 5, 1, 9, 11, 8])).to.equal(true)
       expect(arraysEqual(unsortedStringArr, ["maru", "choux", "doge", "coconut"])).to.equal(true)
     })
 
-    it('correctly sorts arrays of integers with non-standard sort', function () {
+     it('correctly sorts arrays of integers with non-standard sort', function () {
       expect(arraysEqual(fi.sortBy([1, 2, 3, 4, 5, 6], sortIntsBySin), [5, 4, 6, 3, 1, 2])).to.equal(true)
-    })
+    }) 
 
   })
 
@@ -292,7 +292,7 @@ describe('index.js', function () {
 
   describe('giveMeMore', function () {
     it('come get more things to do from an instructor', function () {
-      expect(false).to.equal(true)
+      expect(fi.giveMeMore()).to.equal(true)
     })
   })
 
