@@ -5,19 +5,19 @@ const fi = (function() {
     },
 
     each: function(collection, callback){
-      for(index in collection){
-        callback( collection[index], index, collection)
+      for(let i=0;i<collection.length;i++){
+        callback( collection[i], i, collection)
       } 
     },
 
-    map: function() {
+    map:  function(collection,callback) {
       let myArr=[]
       for(index in collection){
         let element = collection[index]
         myArr.push(callback(element, index, collection))}
     },
 
-    reduce: function() {
+    reduce:function(collection, callback, acc) {
    
       if(acc != null){
          return  collection.reduce(callback,acc);
