@@ -161,7 +161,7 @@ const fi = (function() {
       return flat.some(Array.isArray) ? fi.flatten(flat) : flat;
     },
 
-    
+
     uniq:function(collection,isSorted, callback){
       if(isSorted != null){
         const cond = collection.map(val=>callback(val)).filter((v,i,col)=>{
@@ -169,7 +169,6 @@ const fi = (function() {
         });
 
         let res = collection.map((x,i,col)=>{
-            // console.log(cond[cond.indexOf(callback(x))])
             if(cond.includes(callback(x)) === true){
                 cond[cond.indexOf(callback(x))] = -1;
                 return x
