@@ -1,3 +1,4 @@
+
 const fi = (function() {
   return {
     libraryMethod: function() {
@@ -143,4 +144,46 @@ find: function(collection, predicate) {
 
   }	  
 })();
+fi.libraryMethod()
+=======
+const fi = (function() {
+  return {
+    libraryMethod: function() {
+      return 'Start by reading https://medium.com/javascript-scene/master-the-javascript-interview-what-is-functional-programming-7f218c68b3a0'
+    },
+
+    each: function() {
+
+    },
+
+    map: function(collection,callback) {
+      if(Array.isArray(collection)){
+       let newCollection = [];
+        for (let index = 0; index < collection.length; index++) {
+          newCollection.push(callback(collection[index], index, collection));
+        }
+        return newCollection;
+}else{
+  let newCollection = {}
+        const keysOfObject = Object.keys(collection);
+        for (const key of keysOfObject) {
+          newCollection.key=callback(collection[key], key, collection);
+        }
+        return newCollection;
+      }
+}
+    },
+
+    reduce: function() {
+
+    },
+
+    functions: function() {
+
+    },
+
+
+  }
+})()
+
 fi.libraryMethod()
