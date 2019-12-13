@@ -187,4 +187,3 @@ const fi = (function() {
 })()
 
 fi.libraryMethod()
->>>>>>> bce0747cdf4a0405178dbc384666304001b85158
