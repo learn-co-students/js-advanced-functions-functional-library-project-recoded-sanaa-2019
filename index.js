@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 const fi = (function() {
   return {
     libraryMethod: function() {
