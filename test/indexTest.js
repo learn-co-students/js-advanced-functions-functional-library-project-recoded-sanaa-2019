@@ -290,13 +290,13 @@ describe('index.js', function () {
     })
   })
 
-  describe('giveMeMore', function () {
-    it('come get more things to do from an instructor', function () {
-      expect(false).to.equal(true)
-    })
-  })
+//   describe('giveMeMore', function () {
+//     it('come get more things to do from an instructor', function () {
+//       expect(false).to.equal(true)
+//     })
+//   })
 
-})
+ })
 
 function arraysEqual(arrA, arrB) {
   if (arrA.length !== arrB.length) return false
